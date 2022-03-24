@@ -36,7 +36,7 @@ public class WebController {
 	
 
 	@PostMapping("/inputStudent")
-	public String addNewContact(@ModelAttribute Student s, 
+	public String addNewStudent(@ModelAttribute Student s, 
 	Model model) {
 	repo.save(s);
 	return viewAllStudents(model);
